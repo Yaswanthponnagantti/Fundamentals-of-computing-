@@ -1,11 +1,18 @@
 #include<stdio.h>
-int main(){
-	int i,j,k;
-	printf("enter i");
-	scanf("%d" ,&i);
-	printf("enter j");
-	scanf("%d",&j);      
-	k=i-j;
-	printf("k is %d" ,k);
-	return 0;
+#include<conio.h>
+int main()
+{
+    int N, i;
+    printf("Enter the value of N (limit): ");
+    scanf("%d", &N);
+    printf("\n");
+    for(i=1; i<=N; i++)
+    {
+        if(i==N)
+            printf("%d", i);
+        else
+            printf("%d,", i);
+    }
+    getch();
+    return 0;
 }
